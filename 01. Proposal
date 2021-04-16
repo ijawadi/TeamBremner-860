@@ -3,3 +3,74 @@ To: Prof.Alex Scott
 Team: Bremner
 ProjectName:" Proposal: The impact of socioeconomics conditions on gun violence"
 Due Date: March23rd, 2021
+
+Team Bremner'sProjectProposal: "The impact of socioeconomicsconditionson gun violence.
+
+"Background: Why do people resort to violence?  Violence is a powerful and unpleasant tool.Typically, it’s caused by emotions such as anger or fear. 
+Sometimes, violence can be practical or transactional, such as a gang dispute over territory or a hit on animportant political figure.
+While it is normal for individuals to experience negative emotions, some respond with violence.  
+
+Why?
+In this project, we will explore a few socioeconomic datasetsthat our team has identified as points of interest.
+1.Median Household Income
+2.Poverty Level
+3.High-school graduation rate
+4.Police Activity / Shootings
+5.Ethnic backgroundIn our socioeconomicmodelling,we will use US datasets to explore how socioeconomicsrelatesto violence. 
+Using multiple regression using the points listed above to help predict gun violence in various American cities.
+
+The project will utilize techniques listed below:
+1.Significant data exploration:
+Data is gatheredfrom different sources,and exploration will help understand each dataset'scontent,characteristics, grain, relevance,and how they will be connected.  
+This step will explore each dataset'ssize, completeness, correctness, patterns, and possible relationships amongst data elements within and with other datasets. 
+Several fields within the datasets will also need to be transformed into separate fields. We will use statistics, visualizations and charts to create a bird'seye view 
+for each dataset and identify major points to study in detail relevant to the project.  
+The dataexploration process is a prerequisiteto the second stage, "merging and joining data,"where all datasets could be merged. 
+Data comes from several sources, so we expect a few challenges. Some of the datasets may have mismatched cities, making it impossible toconnect certain statistics between datasets.Some cities may have missing data in either dataset and may need to be dropped or have data imputed.We will discuss variousstatisticaltechniquesthat could be applied to the data to address merge-relatedissues or,if all fails, explore other sources.
+
+2.Significant merging/joining data:
+In the second stage,smaller relevant datasets willbe merged into larger sets. Data mergingis the process ofcombiningtwo or moredatasets into a singledataset. 
+This process is necessary since we dealwithrawdatastored in multiple fileswithdifferent formats like"csv,"worksheets, ordatatables.
+This taskwillinclude fetching, acquiring and connecting data tables, performing joins and documenting all activities around data cleansing activities. 
+We may encounter data-loss at this stage. Tests will be performed at each join/mergeprocess to avoid data loss.  
+We will write atest scriptthat storesthe number of observations for each dataset and compares the count with thenumber of observations after the merge is completed.
+The before and after results will be compared to ensuredata is not lost due to merging.  If the test fails, we will identify the code's problem, fix and re-run 
+it with the restored original data.
+
+3.Feature Engineering: 
+We assume that there will be insufficient data-points to create the model.  
+We,therefore,will resort to Feature Engineering techniques to create data needed for the model. 
+We may use imputation technics for missingvalues, identify and handle outliers, convert data types, may breakdown data with binning techniques, one-hot encoding, 
+groupingor scaling.  Each methodwill be validated for appropriateness against the model and documented.  
+Feature engineering may address the lack of data but has its challenges.  It requires business and knowledge to use a suitable technique.  For example, 
+we cannot use imputation to replace missing data with the income mean because population varies significantly from city to city.
+
+4.Modelling:
+Some relationships we will be modeling.
+ a.Gun violence per population: 
+  We then will build a model that predicts the prevalence of guns per city population.
+ b.Apply regression model to test data.We will reserve 20% of our dataset to test our model and see if it can accurately predict gun 
+  violence per population.Assumptions constitute a significantchallenge in building models.  
+  We will try our best to include as many relevant assumptions as possible and include them in the model.  
+  We also know data has a massiveimpact on the model outcome.  If the model does not predict accurately, we may need to tweak the model or add additional data. 
+  A few components of our data may not be accurate that will critically impact the outcome.Wemay never know how many illegal guns exist.  
+  We will try to find or estimate such figures.
+  
+5.Executive Dashboard: 
+A user-friendly executive dashboard will be created that will show model outputs described in the previous task.  
+ The dashboard will be designed toeasily select key parameters such as country, gun-statistic, and socioeconomic factors,
+ and the dashboard willrefresh accordingly.  We have two options R or Tableau for the Executive Dashboard andwillevaluate 
+ both prior to selectingthe appropriate application for the project. 
+ 
+Appendix:  Data Sources:
+ 1.A comprehensiverecord of over 260,000 US gun violence (2013-2018).. It includes the number of gun incidents per city.
+ 2.Fatal police shootings in the US since 2015 with other US census. The site contains five datasets:
+  a.Median HouseholdIncome per City (2015).  
+  b.Percent of population Over 25 Who Completed High School
+  c.Percentage of People Below Poverty Level
+  d.Count of Police Killings in each US citye
+  e. Share of Race % by the city
+ 3.Firearms and Crime Statistics (Bureau of Justice). 
+ 4.Crime Data Explorer (FBI.) 
+ 
+ 
